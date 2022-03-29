@@ -1,0 +1,44 @@
+<!DOCTYPE html> {% load static %}
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title> 特急料金検索プログラム(β版) </title>
+    {% block extra_css %} {% endblock %}
+</head>
+
+<body>
+    <!-- ↓↓１番上のナビゲーションバー↓↓ -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #85003e;">
+        <div class="container">
+            <a class="navbar-brand" href="/chargesearch/">特急料金検索プログラム(β版)</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- 「サイドバー」と「コンテンツ本体部分」 -->
+
+    {% block sidebar %}
+    {% endblock sidebar %}
+
+</body>
+
+</html>
+
+<!-- サイドバーに使用しているアイコン -->
+<!-- 使用できるアイコンの一覧： https://voyager-jp.com/blog/javascript/feather/ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+<script>
+    feather.replace()
+</script>

@@ -1,0 +1,189 @@
+{% extends 'side_search.html' %}
+{% block contents %}
+
+<h4 class="mt-5 mb-4 border-bottom">常磐線　検索結果</h4>
+<div>
+  <div class="row">
+    <div>
+      <table class="table table-borderless">
+        <tr align="center">
+          <th>
+            <font size="7">{{dep_sta}}</font>
+          </th>
+          <th>
+            <font size="7">→</font>
+          </th>
+          <th>
+            <font size="7">{{arr_sta}}</font>
+          </th>
+        </tr>
+        <tr align="center">
+          <th>{{dep_city}}</th>
+          <th>{{real_distance}}km</th>
+          <th>{{arr_city}}</th>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <br>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">運賃</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>普通</td>
+            <td align="right">{{fare}} 円</td>
+          </tr>
+          <tr>
+            <td>学割</td>
+            <td align="right">{{student_fare}} 円</td>
+          </tr>
+          <tr>
+            <td>株主優待(JR東日本4割)</td>
+            <td align="right">{{shareholder_fare}} 円</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" colspan="2">特急料金</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>普通車指定席</td>
+            <td align="right">{{charge_nr}} 円</td>
+          </tr>
+          <tr>
+            <td>グリーン席</td>
+            <td align="right">{{charge_gr}} 円</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+
+
+      <br>
+      <br>
+      <table>
+        <tr>
+          <th colspan="2" class="mt-5 mb-4 border-bottom">
+            インフォメーション
+          </th>
+        </tr>
+        <tr>
+          <th colspan="2">
+            常磐線特急ご利用について
+          </th>
+        </tr>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            年間を通じて同一の料金です。<br>
+            (最繁忙期・繁忙期・閑散期の加算・割引は適用されません。)
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            常磐線特急「ひたち」「ときわ」は全車指定席です。<br>
+            自由席の設定はございません。
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            車内で特急券をお買い求めの場合は、駅での発売額よりも 260円 高い<b>車内料金</b>での発売となります。<br>
+            事前に指定席特急券・座席未指定券をご用意の上ご利用ください。
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+
+          </td>
+          <td>
+            <br>
+          </td>
+        </tr>
+        <th colspan="2">
+          座席未指定券について
+        </th>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            通常の指定席特急券のほか、乗車日・乗車区間のみを指定し、<br>
+            列車・座席を指定しない特急券「座席未指定券」を発売します。
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            座席未指定券」をご利用の場合、車内の空席をご利用ください。<br>
+            なお、乗車される列車が決まり次第、追加料金なしで列車・座席の指定を受けることも可能です。
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            「座席未指定券」は、列車・座席を指定した現在の指定席特急料金と同一料金です。
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            「座席未指定券」は、満席の場合でもご購入いただけます
+            その場合、デッキ等をご利用ください。<br>
+            車内に空席があればお座りいただけます。満席を理由とした払いもどしは出来ません。
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            指定席特急券をお持ちでも、その座席を他のお客さまが空席として利用している場合があります。
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            ●
+          </td>
+          <td>
+            空席をご利用の場合、その座席の指定席特急券をお持ちのお客さまがいらっしゃいましたら、席をお譲りください。
+          </td>
+        </tr>
+
+
+      </table>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

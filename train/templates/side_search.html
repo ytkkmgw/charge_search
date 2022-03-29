@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block sidebar %}
+
+<div id="content" class="container">
+    <div class="row flex-xl-nowrap">
+        <!-- ↓↓コンテンツ本体↓↓ -->
+        <div class="col-10">
+            {% block contents %} {% endblock contents %}
+        </div>
+        <!-- ↑↑コンテンツ本体ここまで↑↑ -->
+    </div>
+</div>
+</div>
+{% endblock %}

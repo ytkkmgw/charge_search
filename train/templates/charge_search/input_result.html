@@ -1,0 +1,21 @@
+{% extends 'side_search.html' %}
+{% block contents %}
+
+<h4 class="mt-5 mb-4 border-bottom">データ追加 </h4>
+
+<form  action="{% url 'charge_search:input' %}" method="post">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      {{return_obj}}
+    </div>
+  </div>
+</div>
+<font color="#ff0000">{{err_msg}}</font>
+{% csrf_token %}
+</form>
+<form action="#">
+
+  </form>
+  
+{% endblock %}

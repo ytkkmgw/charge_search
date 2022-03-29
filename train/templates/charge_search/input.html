@@ -1,0 +1,23 @@
+{% extends 'side_search.html' %}
+{% block contents %}
+
+<h4 class="mt-5 mb-4 border-bottom">データ追加 </h4>
+
+<form  action="{% url 'charge_search:input' %}" method="post">
+<div class="container-fluid">
+  <div class="row">
+      views.py/InputView.postを編集して、追加データを入力してください。
+      <br>
+      <button type="submit" name="button" class="btn btn-info">
+       追加実行
+      </button>
+  </div>
+</div>
+<font color="#ff0000">{{err_msg}}</font>
+{% csrf_token %}
+</form>
+<form action="#">
+
+  </form>
+  
+{% endblock %}
