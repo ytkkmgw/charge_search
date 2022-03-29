@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'train.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'charge_search_db',
+        'USER': 'kmgw',
+        'PASSWORD': 'kokuhu64',
+        'HOST': 'kmgw.mysql.pythonanywhere-services.com',
+        'PORT': '',
     }
 }
 
