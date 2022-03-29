@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'train.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'charge_search_db',
+        'NAME': 'kmgw$charge_search_db',
         'USER': 'kmgw',
         'PASSWORD': 'kokuhu64',
         'HOST': 'kmgw.mysql.pythonanywhere-services.com',
